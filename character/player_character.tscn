@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://du5ckqrea7s57"]
+
+[ext_resource type="SpriteFrames" uid="uid://b1gb8mwt2at0j" path="res://character/resources/character_animations.tres" id="1_5dlv1"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5dlv1"]
+custom_solver_bias = 0.038
+radius = 0.4
+height = 1.0
+
+[node name="PlayerCharacter" type="Node3D"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+motion_mode = 1
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
+pixel_size = 0.05
+billboard = 1
+texture_filter = 0
+sprite_frames = ExtResource("1_5dlv1")
+animation = &"walk"
+frame_progress = 0.45396984
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CapsuleShape3D_5dlv1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody3D"]
+root_node = NodePath("../AnimatedSprite3D")
