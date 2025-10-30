@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Potion" load_steps=5 format=3 uid="uid://dkfg4oqb45knu"]
+
+[ext_resource type="Script" uid="uid://bdjqcqb4h1idc" path="res://potions/scripts/ingredient.gd" id="1_poc6o"]
+[ext_resource type="Resource" uid="uid://dqvwkvyhy4070" path="res://potions/resources/ingredients/ingredient_blue.tres" id="2_ffo2n"]
+[ext_resource type="Resource" uid="uid://rhnonrsgjttc" path="res://potions/resources/ingredients/ingredient_yellow.tres" id="3_ffo2n"]
+[ext_resource type="Script" uid="uid://dnrd2rg1567pp" path="res://potions/scripts/potion.gd" id="3_kyt3i"]
+
+[resource]
+script = ExtResource("3_kyt3i")
+name = "Green Potion"
+ingredients = Array[ExtResource("1_poc6o")]([ExtResource("2_ffo2n"), ExtResource("3_ffo2n")])

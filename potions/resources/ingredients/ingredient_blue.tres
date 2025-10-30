@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=5 format=3 uid="uid://dqvwkvyhy4070"]
+
+[ext_resource type="Script" uid="uid://cps5dqpgd5igi" path="res://potions/scripts/ingredient_property.gd" id="1_j7ywj"]
+[ext_resource type="Script" uid="uid://bdjqcqb4h1idc" path="res://potions/scripts/ingredient.gd" id="1_xvvyn"]
+[ext_resource type="Resource" uid="uid://cx4nohg2ucdv" path="res://potions/resources/ingredients/properties/Stabilizing.tres" id="2_pgygp"]
+[ext_resource type="Resource" uid="uid://ctuewu0snioql" path="res://potions/resources/ingredients/properties/Catalytic.tres" id="3_3p6oq"]
+
+[resource]
+script = ExtResource("1_xvvyn")
+name = "Blue"
+properties = Array[ExtResource("1_j7ywj")]([ExtResource("2_pgygp"), ExtResource("3_3p6oq")])
+metadata/_custom_type_script = "uid://bdjqcqb4h1idc"

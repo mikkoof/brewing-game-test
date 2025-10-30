@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Potion" load_steps=5 format=3 uid="uid://ckmkatb7dyp3"]
+
+[ext_resource type="Script" uid="uid://bdjqcqb4h1idc" path="res://potions/scripts/ingredient.gd" id="1_qljwc"]
+[ext_resource type="Resource" uid="uid://rhnonrsgjttc" path="res://potions/resources/ingredients/ingredient_yellow.tres" id="2_8yrqa"]
+[ext_resource type="Script" uid="uid://dnrd2rg1567pp" path="res://potions/scripts/potion.gd" id="3_a2xtq"]
+[ext_resource type="Resource" uid="uid://ci8j0f7k3qram" path="res://potions/resources/ingredients/ingredient_red.tres" id="3_rvtx8"]
+
+[resource]
+script = ExtResource("3_a2xtq")
+name = "Orange Potion"
+ingredients = Array[ExtResource("1_qljwc")]([ExtResource("2_8yrqa"), ExtResource("3_rvtx8")])
