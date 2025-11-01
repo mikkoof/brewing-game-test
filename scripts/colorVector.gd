@@ -11,20 +11,20 @@ extends Resource
 func get_as_simple_fractions() -> Dictionary:
   var total = red + yellow + blue + black + white
   if total == 0:
-    return {
-      "red": "0/1",
-      "yellow": "0/1", 
-      "blue": "0/1",
-      "black": "0/1",
-      "white": "0/1"
-    }
+	return {
+	  "red": "0/1",
+	  "yellow": "0/1", 
+	  "blue": "0/1",
+	  "black": "0/1",
+	  "white": "0/1"
+	}
   
   return {
-    "red": str(red) + "/" + str(total),
-    "yellow": str(yellow) + "/" + str(total),
-    "blue": str(blue) + "/" + str(total),
-    "black": str(black) + "/" + str(total),
-    "white": str(white) + "/" + str(total)
+	"red": str(red) + "/" + str(total),
+	"yellow": str(yellow) + "/" + str(total),
+	"blue": str(blue) + "/" + str(total),
+	"black": str(black) + "/" + str(total),
+	"white": str(white) + "/" + str(total)
   }
 
 func _init(p_red = 0, p_yellow = 0, p_blue = 0, p_black = 0, p_white = 0):

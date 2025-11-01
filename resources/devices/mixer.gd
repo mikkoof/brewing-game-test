@@ -1,15 +1,34 @@
 class_name MixerLogic
 extends Resource
 
-func mix_vials(vial1: Vial, vial2: Vial) -> Array[Vial]:
-	var new_red = vial1.colorVector.red + vial2.colorVector.red
-	var new_yellow = vial1.colorVector.yellow + vial2.colorVector.yellow
-	var new_blue = vial1.colorVector.blue + vial2.colorVector.blue
-	var new_black = vial1.colorVector.black + vial2.colorVector.black
-	var new_white = vial1.colorVector.white + vial2.colorVector.white
-	
-	var new_color_vector = Vector5Color.new(new_red, new_yellow, new_blue, new_black, new_white)
-	var new_vial1 = Vial.new(new_color_vector)
-	var new_vial2 = Vial.new(new_color_vector)
+@export var vials: Array[Vial]
 
-	return [new_vial1, new_vial2]
+func add_vial(vial: Vial) -> void:
+	if vial:
+		vials.append(vial)
+
+func mix() -> Array[Vial]:
+	var mixed_colors = Vector5Color.new()
+	for vial in vials:
+		mixed_colors.red += vial.colorVector.red
+		mixed_colors.yellow += vial.colorVector.yellow
+		mixed_colors.blue += vial.colorVector.blue
+		mixed_colors.black += vial.colorVector.black
+		mixed_colors.white += vial.colorVector.white
+
+	var averaged_colors = Vector5Color.new()
+	var vial_count = vials.size()
+	if vial_count > 0:
+		averaged_colors.red = mixed_colors.red / vial_count
+		averaged_colors.yellow = mixed_colors.yellow / vial_count
+		averaged_colors.blue = mixed_colors.blue / vial_count
+		averaged_colors.black = mixed_colors.black / vial_count
+		averaged_colors.white = mixed_colors.white / vial_count
+
+	var result_vials: Array[Vial] = []
+	for  i in range(vial_count):
+		var new_vial = Vial.new(averaged_colors)
+		result_vials.append(new_vial)
+
+	vials.clear()
+	return result_vials
