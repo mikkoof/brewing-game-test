@@ -17,6 +17,10 @@ config/features=PackedStringArray("4.5", "GL Compatibility")
 
 project/assembly_name="Brewing_Game_Test"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

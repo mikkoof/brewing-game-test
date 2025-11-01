@@ -3,3 +3,7 @@
 /android/
 settings.json
 assets/**
+
+
+addons/*
+!addons/.gitkeep
