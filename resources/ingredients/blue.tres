@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=4 format=3 uid="uid://8l1k8hyx5fmi"]
+
+[ext_resource type="Script" uid="uid://daft5541xrj0" path="res://scripts/colorVector.gd" id="1_wctd6"]
+[ext_resource type="Script" uid="uid://bdjqcqb4h1idc" path="res://scripts/ingredient.gd" id="2_2s35j"]
+
+[sub_resource type="Resource" id="Resource_we0oe"]
+script = ExtResource("1_wctd6")
+blue = 100
+metadata/_custom_type_script = "uid://daft5541xrj0"
+
+[resource]
+script = ExtResource("2_2s35j")
+label = "Blue"
+boiling_point = 100
+weight = 5
+color_vector = SubResource("Resource_we0oe")
+metadata/_custom_type_script = "uid://bdjqcqb4h1idc"

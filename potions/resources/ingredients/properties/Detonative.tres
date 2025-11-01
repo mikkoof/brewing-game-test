@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="Ingredient_Property" load_steps=2 format=3 uid="uid://bktqa8ajqdoim"]
-
-[ext_resource type="Script" uid="uid://cps5dqpgd5igi" path="res://potions/scripts/ingredient_property.gd" id="1_dbtn3"]
-
-[resource]
-script = ExtResource("1_dbtn3")
-name = "Detonative"
-metadata/_custom_type_script = "uid://cps5dqpgd5igi"

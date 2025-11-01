@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="Ingredient_Property" load_steps=2 format=3 uid="uid://cwhbbduwj1467"]
-
-[ext_resource type="Script" uid="uid://cps5dqpgd5igi" path="res://potions/scripts/ingredient_property.gd" id="1_7i2vk"]
-
-[resource]
-script = ExtResource("1_7i2vk")
-name = "Amplifying"
-metadata/_custom_type_script = "uid://cps5dqpgd5igi"
