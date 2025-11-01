@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Device" load_steps=2 format=3 uid="uid://hv1v8agl8i4d"]
+
+[ext_resource type="Script" uid="uid://brmovo4yn4amk" path="res://scripts/device.gd" id="1_c0t1i"]
+
+[resource]
+script = ExtResource("1_c0t1i")
+metadata/_custom_type_script = "uid://brmovo4yn4amk"

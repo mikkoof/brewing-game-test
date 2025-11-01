@@ -1,4 +1,4 @@
-class_name Potion
+class_name Vial
 extends Resource
 
 @export var colorVector: Vector5Color
